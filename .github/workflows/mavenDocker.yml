@@ -9,7 +9,7 @@ jobs:
       - name: Clone the current repo on the runner
         uses: actions/checkout@v4
       - name: Setup java 17 & maven
-        uses: actions/setup-java@v4
+        uses: actions/checkout@v4
         with:
           distribution: 'temurin'
           java- version: '17'
