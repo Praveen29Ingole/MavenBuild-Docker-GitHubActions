@@ -30,6 +30,6 @@ jobs:
           push: true
           tags: ${{secrets.DOCKERHUB_USERNAME}}${{env.imageName}}:latest
       - name: Deploy the image
-        run:
+        run: |
           docker run -d -P ${{secrets.DOCKERHUB_USERNAME}}:latest
           docker ps -a
